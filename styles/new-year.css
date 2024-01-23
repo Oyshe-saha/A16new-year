@@ -29,3 +29,41 @@ padding-bottom: 400px;
 padding-left: 320px;
 padding-top: 0px;
 }
+/*main section start*/
+main{
+    margin: 150px auto;
+}
+/*categories section*/
+
+.categories-title{
+    color: #F00;
+text-align: center;
+font-family: Inter;
+font-size: 88px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.categories-subtitle{
+    color: #F00;
+text-align: center;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.categories-last-title{
+    color: #070211;
+text-align: center;
+font-family: Inter;
+font-size: 48px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.categories img{
+    align-items: center;
+    padding: 0 310px;
+    margin-top: 30px;
+}
