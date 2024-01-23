@@ -1,0 +1,31 @@
+header{
+    max-width: 1320px;
+    max-height: 600px;
+    border-radius: 16px;
+    background: linear-gradient(180deg, #070211 0%, rgba(7, 2, 17, 0.00) 100%),url(../Images/banner.png);
+margin: 0 auto;
+gap: 0;
+}
+.banner-sub-title{
+    color: #FFF;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding:130px 400px 0px 400px ;
+}
+.banner-title{
+    max-width: 632px;
+ color: #FFF;
+    text-align: center;
+    font-family: Merriweather;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 90px; 
+padding-bottom: 400px;
+padding-left: 320px;
+padding-top: 0px;
+}
