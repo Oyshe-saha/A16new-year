@@ -1,3 +1,7 @@
+*{
+    font-family: "Inter", sans-serif;
+    font-family: "Merriweather Sans", sans-serif;
+}
 header{
     max-width: 1320px;
     max-height: 600px;
@@ -38,7 +42,9 @@ main section{
     margin: 150px auto;
 }
 /*categories section*/
-
+.categories{
+gap: 50px;
+}
 .categories-title{
     color: #F00;
 text-align: center;
@@ -127,8 +133,6 @@ background: linear-gradient(180deg, rgba(255, 0, 0, 0.10) 0%, rgba(255, 0, 0, 0.
 text-align: center;
 
 }
-
-
 .join-now-button{border-radius: 8px;
     background: #F00;
     color:white;
@@ -166,11 +170,17 @@ padding: 100px 350px ;
     display: flex;
     background-image: url(../Images/offer.png);
     background-repeat: no-repeat;
-    background-size: 350px ;
+    background-size: 300px 300px;
     background-position: center;
+    
+    justify-content: space-between;
 }
-.best-offer.best-offer-sub-title {
-    width: 150px;
+.best-offer-text{
+    max-width: 353px;
+    padding-right: 60px;
+}
+.best-offer-sub-title {
+    width: 200px;
     color: #F00;
 text-align: center;
 font-family: Inter;
@@ -179,7 +189,7 @@ font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
-.best-offer.best-offer-title {
+.best-offer-title {
     width: 300px;
     color: #070211;
 font-family: Merriweather;
@@ -189,7 +199,7 @@ font-weight: 900;
 line-height: normal;
 text-transform: capitalize;
 }
-.best-offer.description {
+.description {
     width: 350px;
     color: rgba(7, 2, 17, 0.60);
 font-family: Inter;
@@ -198,7 +208,11 @@ font-style: normal;
 font-weight: 400;
 line-height: 32px; 
 }
-.best-offer.2024 {
+.best-offer-year {
+    max-width: 253px;
+    padding-right: 40px;
+}
+.year24 {
     width: 100px;
     color: #F00;
 font-family: Inter;
@@ -211,16 +225,62 @@ line-height: normal;
     width: 110px;
 height: 110px;
 }
-/* portfolio section */
-.portfolio.portfolio-subtitle{
-    color: #F00;
+/* holiday section */
+.holiday-text {
+    text-align: center;
+    max-width: 1320px;
+    height: ;
+}
+.holiday-subtitle {
+    color: #070211;
 font-family: Inter;
 font-size: 24px;
 font-style: normal;
 font-weight: 500;
 line-height: normal;
 }
-.portfolio.portfolio-title{
+.holiday-title {
+    color: #070211;
+font-family: Merriweather;
+font-size: 72px;
+font-weight: 900;
+}
+#holiday {
+    color: #F00;
+text-align: center;
+font-family: Merriweather;
+font-size: 72px;
+font-weight: 900;
+}
+.holiday-description {
+    max-width: 900px;
+    color: rgba(7, 2, 17, 0.60);
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-weight: 500;
+line-height: 32px; 
+margin: 0 auto;
+}
+.holiday-images{
+    background:url(../Images/red.png);
+    background-repeat: no-repeat;
+    background-size:1320px 229px ;
+    background-position-x: 100%;
+}
+
+
+/* portfolio section */
+.portfolio-subtitle{
+    color: #F00;
+font-family: Inter;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 15px;
+}
+.portfolio-title{
     color: #070211;
 font-family: Merriweather;
 font-size: 48px;
@@ -228,8 +288,9 @@ font-style: normal;
 font-weight: 900;
 line-height: normal;
 text-transform: capitalize;
+margin-bottom: 15px;
 }
-.portfolio.portfolio-img1 {
+.portfolio-img1 {
     display: flex;
     width: 424px;
 height: 450px;
@@ -247,11 +308,13 @@ flex-shrink: 0;
 background: rgba(255, 0, 0, 0.05);
 align-items: center;
 justify-content: center;
-padding: 100px 50px 100px 100px;
+padding:  100px;
+margin: 0 auto;
 }
-.newsletter.newsletter-title{
+.newsletter-title{
     color: #070211;
 text-align: center;
+justify-content: center;
 font-family: Merriweather;
 font-size: 48px;
 font-style: normal;
@@ -260,15 +323,47 @@ line-height: normal;
 text-transform: capitalize;
 }
 .newsletter img{
-    padding:50px 250px;
-    height: 150px;
-    width: 150px;
+    margin: 50px 500px;
+    height: 100px;
+    width: 100px;
+    align-items: center;
+    justify-content: center;
 }
-.newsletter.form{
+.newsletter-description{
+    max-width: 720px;
+    color: rgba(7, 2, 17, 0.60);
+text-align: center;
+justify-content: center;
+font-family: Inter;
+font-size: 20px;
+font-weight: 400;
+line-height: 32px; 
+margin: 10px auto;
+}
+.form{
     display: flex;
-    gap: 0;
+    max-width: 548px;
+    margin:40px auto;
 }
-
+#input{
+    flex-grow: 1;
+    border: none;
+    padding: 17px;
+    border-radius: 50px;
+}
+.subscribe {
+    width: 150px;
+height: 50px;
+border: none;
+ border-radius: 0px 50px 50px 0px;
+background: #F00;
+color: #FFF;
+text-align: center;
+font-family: Inter;
+font-size: 20px;
+font-weight: 600;
+text-transform: capitalize;
+}
 /* footer section */
 footer {
     background: #070211;
@@ -283,7 +378,7 @@ footer {
 }
 .fotter-location{
     height: 80px;
-    width: 350px;
+    width: 400px;
     color: #FFF;
 font-family: Inter;
 font-size: 24px;
@@ -291,17 +386,30 @@ font-style: normal;
 font-weight: 500;
 line-height: 40px; 
 }
-#call,#web {
-    height: 24px;
-    width: 24px;
-    display: inline;
+.fotter-location.call-web {
+    margin-top:85px ;
+    margin-right: 20px;
 }
-
+#call,#web {
+    height: 27px;
+    width: 27px;
+    display: inline-block;
+}
+hr{
+    border:none;
+    height: 1px;
+    background: #FFF;
+}
 .footer-links {
     align-items: center;
     justify-content: center;
     gap:20px;
     padding: 80px auto;
+    margin: 40px 450px;
+}
+.footer-links a {
+    margin-right: 10px;
+    padding: 30px auto;
 }
 #facebook,#instragram,#twitter#linkdin{
     width: 64px;
